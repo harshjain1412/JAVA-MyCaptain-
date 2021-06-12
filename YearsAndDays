@@ -1,0 +1,22 @@
+package yearsanddays;
+
+import java.util.Scanner;
+
+public class YearsAndDays {
+    public static void main(String[] args) {
+        
+        int minutesInYear = 60 * 24 * 365, min, years, days;
+        
+        System.out.print("Input the number of minutes: ");
+        
+        Scanner in = new Scanner(System.in);
+        
+        min = in.nextInt();
+        
+        years = (min / minutesInYear);
+        
+        days = (min/60/24) % 365;
+        
+        System.out.println(min + " minutes is approximately " + years + " years and " + days + " days");
+    }
+}
