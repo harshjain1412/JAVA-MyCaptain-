@@ -1,0 +1,28 @@
+package switchmenu;
+
+import java.util.Scanner;
+
+public class SwitchMenu {
+    
+    public static void main(String[] args) {
+     
+        int menu;
+        
+        System.out.println("Pick one option:\r\n1. Burger\r\n2. Sandwich\r\n3. Pasta\r\n4. Salad");
+        
+        Scanner s = new Scanner(System.in);
+        
+        menu = s.nextInt();
+        
+        switch(menu){                
+        case 1: System.out.println("You choose Burger");
+        break; 
+        case 2: System.out.println("You choose Sandwich");
+        break; 
+        case 3: System.out.println("You choose Pasta");
+        break; 
+        case 4: System.out.println("You choose Salad");
+        break; 
+        default: System.out.println("Invalid Option");
+        }
+    }
